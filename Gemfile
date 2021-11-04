@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://rubygems.org' # rubocop:disable Style/FrozenStringLiteralComment
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
@@ -19,7 +19,7 @@ gem 'devise-bootstrap-views', '~> 1.1'
 # Slugging and permalink plugins for Active Record.
 gem 'friendly_id', '~> 5.3'
 # HTML Abstraction Markup Language.
-gem "haml-rails", "~> 2.0"
+gem 'haml-rails', '~> 2.0'
 ## High-level wrapper for processing images for the web with ImageMagick or libvips.
 ## gem 'image_processing', '~> 1.10', '>= 1.10.3'
 # Build JSON APIs with ease.
