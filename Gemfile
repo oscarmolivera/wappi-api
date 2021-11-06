@@ -16,6 +16,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise', '~> 4.7', '>= 4.7.1'
 # Bootstrap views for Devise with I18n support.
 gem 'devise-bootstrap-views', '~> 1.1'
+# HTTP/REST API client library.
+gem 'faraday', '~> 1.8'
 # Slugging and permalink plugins for Active Record.
 gem 'friendly_id', '~> 5.3'
 # HTML Abstraction Markup Language.
