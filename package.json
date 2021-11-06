@@ -2,6 +2,7 @@
   "name": "wappi",
   "private": true,
   "dependencies": {
+    "@popperjs/core": "^2.10.2",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
@@ -16,6 +17,6 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^4.4.0"
+    "webpack-dev-server": "~3"
   }
 }
