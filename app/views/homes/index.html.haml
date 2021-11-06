@@ -1,0 +1,65 @@
+.container-fluid
+  .row
+    .col-md-12
+      %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        %button.navbar-toggler{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+          %span.navbar-toggler-icon
+        %a.navbar-brand{:href => "#"} Brand
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.navbar-nav
+            %li.nav-item.active
+              %a.nav-link{:href => "#"}
+                Link
+                %span.sr-only (current)
+            %li.nav-item
+              %a.nav-link{:href => "#"} Link
+            %li.nav-item.dropdown
+              %a#navbarDropdownMenuLink.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "http://example.com"} Dropdown link
+              .dropdown-menu{"aria-labelledby" => "navbarDropdownMenuLink"}
+                %a.dropdown-item{:href => "#"} Action
+                %a.dropdown-item{:href => "#"} Another action
+                %a.dropdown-item{:href => "#"} Something else here
+                .dropdown-divider
+                %a.dropdown-item{:href => "#"} Separated link
+          %ul.navbar-nav.ml-md-auto
+            %li.nav-item.active
+              %a.nav-link{:href => "#"}
+                Link
+                %span.sr-only (current)
+            %li.nav-item.dropdown
+              %a#navbarDropdownMenuLink.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "http://example.com"} Dropdown link
+              .dropdown-menu.dropdown-menu-right{"aria-labelledby" => "navbarDropdownMenuLink"}
+                %a.dropdown-item{:href => "#"} Action
+                %a.dropdown-item{:href => "#"} Another action
+                %a.dropdown-item{:href => "#"} Something else here
+                .dropdown-divider
+                %a.dropdown-item{:href => "#"} Separated link
+      .jumbotron
+        %h2
+          Hello, world!
+        %p
+          This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+        %p
+          %a.btn.btn-primary.btn-large{:href => "#"} Learn more
+  .row
+    .col-md-4
+      %h2
+        Heading
+      %p
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      %p
+        %a.btn{:href => "#"} View details »
+    .col-md-4
+      %h2
+        Heading
+      %p
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      %p
+        %a.btn{:href => "#"} View details »
+    .col-md-4
+      %h2
+        Heading
+      %p
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      %p
+        %a.btn{:href => "#"} View details »
