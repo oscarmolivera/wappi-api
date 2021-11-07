@@ -1,65 +1,37 @@
 .container-fluid
   .row
     .col-md-12
-      %nav.navbar.navbar-expand-lg.navbar-light.bg-light
-        %button.navbar-toggler{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-          %span.navbar-toggler-icon
-        %a.navbar-brand{:href => "#"} Brand
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          %ul.navbar-nav
-            %li.nav-item.active
-              %a.nav-link{:href => "#"}
-                Link
-                %span.sr-only (current)
-            %li.nav-item
-              %a.nav-link{:href => "#"} Link
-            %li.nav-item.dropdown
-              %a#navbarDropdownMenuLink.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "http://example.com"} Dropdown link
-              .dropdown-menu{"aria-labelledby" => "navbarDropdownMenuLink"}
-                %a.dropdown-item{:href => "#"} Action
-                %a.dropdown-item{:href => "#"} Another action
-                %a.dropdown-item{:href => "#"} Something else here
-                .dropdown-divider
-                %a.dropdown-item{:href => "#"} Separated link
-          %ul.navbar-nav.ml-md-auto
-            %li.nav-item.active
-              %a.nav-link{:href => "#"}
-                Link
-                %span.sr-only (current)
-            %li.nav-item.dropdown
-              %a#navbarDropdownMenuLink.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "http://example.com"} Dropdown link
-              .dropdown-menu.dropdown-menu-right{"aria-labelledby" => "navbarDropdownMenuLink"}
-                %a.dropdown-item{:href => "#"} Action
-                %a.dropdown-item{:href => "#"} Another action
-                %a.dropdown-item{:href => "#"} Something else here
-                .dropdown-divider
-                %a.dropdown-item{:href => "#"} Separated link
       .jumbotron
         %h2
-          Hello, world!
+          Desafio Wapii!
         %p
-          This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-        %p
-          %a.btn.btn-primary.btn-large{:href => "#"} Learn more
+          Evaluar Ruby on Rails como herramienta en la resolución de un problema concreto. Se solicita utilizar RubyOnRails en su versión 5.0.0 o superior. Wapii con el fin de acercarse a los usuarios quiere crear un nuevo producto llamado Wapii-Net, una pequeña red social en donde todos sus usuarios puedan interactuar libremente, publicando mensajes cortos y comentarios sobre esas publicaciones.
   .row
-    .col-md-4
+    .col-md-3
       %h2
-        Heading
+        Visualizacion Paginada
       %p
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        Cada publicación contine el nombre del autor, el título de la publicación, el texto de la publicación, los primeros 3 comentarios y el número total de comentarios.
+      %p
+        %a.btn{:href => posts_path} View details »
+    .col-md-3
+      %h2
+        Endpoint /users
+      %p
+        Lista de usuarios ordenados decrecientemente por cantidad de publicaciones [nombre de usuario, cantidad de publicaciones]
       %p
         %a.btn{:href => "#"} View details »
-    .col-md-4
+    .col-md-3
       %h2
-        Heading
+        Endpoint /trending/
       %p
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        Publicaciones con más comentarios [título, texto (body), nombre de usuario autor]
       %p
         %a.btn{:href => "#"} View details »
-    .col-md-4
+    .col-md-3
       %h2
-        Heading
+        Endpoint /influencers
       %p
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        Obtener los 5 usuarios mas populares (mayor cantidad de comentarios, en la menor cantidad de publicaciones) [nombre de usuario, índice de popularidad]
       %p
-        %a.btn{:href => "#"} View details »
+        %a.btn{:href => "#"} View details »        
