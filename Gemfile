@@ -36,6 +36,8 @@ gem 'puma', '~> 4.1'
 gem 'pundit', '~> 2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'.
 gem 'rails', '~> 6.1.4.1', '>= 6.1.4.1'
+# Simple, efficient background processing for Ruby.
+gem 'sidekiq', '~> 6.3'
 # Simple Form a flexible way to create your forms.
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 # Use SCSS for stylesheets.
