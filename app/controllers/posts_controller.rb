@@ -2,8 +2,9 @@
 
 class PostsController < ApplicationController
   before_action :load_posts, only: :index
+  
   def index
-    @posts = Post.all
+    @pagy,  @posts = pagy(Post.all, page: params[:page], items: 10)
   end
 
   def load_posts
