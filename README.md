@@ -1,24 +1,31 @@
 # README
+## _Desafio tecnico_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# Wapii
 
-* Ruby version
+Evaluar Ruby on Rails como herramienta en la resolución de un problema concreto.
+Se solicita utilizar RubyOnRails en su versión 5.0.0 o superior.
 
-* System dependencies
+---
 
-* Configuration
+## Stack
 
-* Database creation
+- Ruby 3.0.0
+- Rails 6.1.4.1
+- PostgreSQL 10.4
+- Sidekiq 6.3.x
 
-* Database initialization
+---
 
-* How to run the test suite
+### Cómo hacer correr el proyecto desde cero
 
-* Services (job queues, cache servers, search engines, etc.)
+Desde la consola, corre los siguientes comandos:
 
-* Deployment instructions
-
-* ...
+```sh
+https://github.com/oscarmolivera/wappi-api
+cd wappi-api
+bundle install
+rails db:create
+rails db:migrate
+```
