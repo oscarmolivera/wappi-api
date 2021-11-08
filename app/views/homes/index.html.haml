@@ -1,0 +1,37 @@
+.container-fluid
+  .row
+    .col-md-12
+      .jumbotron
+        %h2
+          Desafio Wapii!
+        %p
+          Evaluar Ruby on Rails como herramienta en la resolución de un problema concreto. Se solicita utilizar RubyOnRails en su versión 5.0.0 o superior. Wapii con el fin de acercarse a los usuarios quiere crear un nuevo producto llamado Wapii-Net, una pequeña red social en donde todos sus usuarios puedan interactuar libremente, publicando mensajes cortos y comentarios sobre esas publicaciones.
+  .row
+    .col-md-3
+      %h2
+        Visualizacion Paginada
+      %p
+        Cada publicación contine el nombre del autor, el título de la publicación, el texto de la publicación, los primeros 3 comentarios y el número total de comentarios.
+      %p
+        %a.btn{:href => posts_path} View details »
+    .col-md-3
+      %h2
+        Endpoint /users
+      %p
+        Lista de usuarios ordenados decrecientemente por cantidad de publicaciones [nombre de usuario, cantidad de publicaciones]
+      %p
+        %a.btn{:href => "#"} View details »
+    .col-md-3
+      %h2
+        Endpoint /trending/
+      %p
+        Publicaciones con más comentarios [título, texto (body), nombre de usuario autor]
+      %p
+        %a.btn{:href => "#"} View details »
+    .col-md-3
+      %h2
+        Endpoint /influencers
+      %p
+        Obtener los 5 usuarios mas populares (mayor cantidad de comentarios, en la menor cantidad de publicaciones) [nombre de usuario, índice de popularidad]
+      %p
+        %a.btn{:href => "#"} View details »        

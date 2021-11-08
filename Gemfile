@@ -16,6 +16,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise', '~> 4.7', '>= 4.7.1'
 # Bootstrap views for Devise with I18n support.
 gem 'devise-bootstrap-views', '~> 1.1'
+# HTTP/REST API client library.
+gem 'faraday', '~> 1.8'
 # Slugging and permalink plugins for Active Record.
 gem 'friendly_id', '~> 5.3'
 # HTML Abstraction Markup Language.
@@ -34,6 +36,8 @@ gem 'puma', '~> 4.1'
 gem 'pundit', '~> 2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'.
 gem 'rails', '~> 6.1.4.1', '>= 6.1.4.1'
+# Simple, efficient background processing for Ruby.
+gem 'sidekiq', '~> 6.3'
 # Simple Form a flexible way to create your forms.
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 # Use SCSS for stylesheets.
@@ -48,6 +52,8 @@ gem 'webpacker', '~> 4.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console.
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  # Use Pry as your rails console
+  gem 'pry-rails'
   # A testing framework for Rails 5+.
   gem 'rspec-core'
   gem 'rspec-expectations'
