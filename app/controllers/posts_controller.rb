@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   before_action :load_posts, only: :index
   
   def index
-    @pagy,  @posts = pagy(Post.all, page: params[:page], items: 10)
+    @pagy,  @posts = pagy(Post.includes(:user, :comments), page: params[:page], items: 10)
   end
 
   def load_posts

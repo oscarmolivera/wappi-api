@@ -1,21 +1,39 @@
 .container
-  - if @posts.any?
-    %table#listing_posts.table{"data-hook" => ""}
-      %thead
-        %tr{"data-hook" => "posts_index_headers"}
-          %th= 'PostID'
-          %th= 'UserID'
-          %th= 'PostTITLE'
-          %th= 'PostBODY'
-          %th.actions{"data-hook" => "posts_header_actions"}
-      %tbody
-        - @posts.each.with_index do |post|
-          %tr{class: "#{cycle('odd', 'even')}", "data-hook" => "admin_posts_index_rows"}
-            %td= post.id
-            %td= post.user_id
-            %td= post.title
-            %td= post.body
-    = pagy_bootstrap_nav(@pagy).html_safe
-  - else
-    .alert.alert-info.no-objects-found
-      = "No Posts Found"
+  .row
+    %h2 Responsive Table with DataTables
+    .container
+  .row
+    - if @posts.any?
+      %table#listing_posts.table{"data-hook" => ""}
+        %thead
+          %tr{"data-hook" => "posts_index_headers"}
+            %th= 'Autor'
+            %th= 'Titulo'
+            %th= 'Contenido'
+            %th= 'Comentarios'
+            %th= 'Total'
+            %th.actions{"data-hook" => "posts_header_actions"}
+        %tbody
+          - @posts.each.with_index do |post|
+            %tr{class: "#{cycle('odd', 'even')}", "data-hook" => "admin_posts_index_rows"}
+              %td= post.user.name
+              %td= post.title
+              %td= post.body
+              %td= post.comments.first.id
+              %td= post.comments.count
+      = pagy_bootstrap_nav(@pagy).html_safe
+    - else
+      .alert.alert-info.no-objects-found
+        = "No Posts Found"
+        %tfoot
+          %tr
+            %td.text-center(colspan="5")
+              Data retrieved from
+              %a(href="http://www.infoplease.com/ipa/A0855611.html" target="_blank") infoplease
+              and
+              = succeed "." do
+                %a(href="http://www.worldometers.info/world-population/population-by-country/" target="_blank") worldometers
+    %p.p
+      Demo by George Martsoukos.
+      = succeed "." do
+        %a(href="http://www.sitepoint.com/responsive-data-tables-comprehensive-list-solutions" target="_blank") See article      
